@@ -57,5 +57,5 @@ const MaterialComponent = withStyles(theme => ({
 
 storiesOf('ButtonNew', module)
  // .add('Text Buttons', () => <MaterialComponent />)
-  //.add('Outlined Buttons', () => <MaterialComponent variant="outlined" />)
+  .add('Outlined Buttons', () => <MaterialComponent variant="outlined" />)
   .add('Contained Buttons', () => <MaterialComponent classes='' variant="contained" />);
