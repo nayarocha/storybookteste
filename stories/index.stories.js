@@ -27,28 +27,7 @@ const MaterialComponent = withStyles(
   { withTheme: true }
 )(({ classes, variant }) => (
   <Card className={classes.card}>
-    <CardMedia
-      className={classes.media}
-      image="https://source.unsplash.com/800x400?cities,nature"
-      title="Contemplative Reptile"
-    />
-    <CardContent>
-      <Typography gutterBottom variant="headline" component="h2">
-        How to use Storybook
-      </Typography>
-      <Typography component="p">
-        $ yarn storybook # to launch Storybook
-      </Typography>
-      <Typography component="p">
-        Select the story from the left panel
-      </Typography>
-      <Typography component="p">
-        Ctrl-Shift-F to toggle Fullscreen mode
-      </Typography>
-      <Typography component="p">
-        Select the theme from Material-UI addon panel dropdown
-      </Typography>
-    </CardContent>
+    
     <CardActions>
       <Button size="small" variant={variant} onClick={action('Default')}>
         Default
@@ -81,7 +60,7 @@ const MaterialComponent = withStyles(
   </Card>
 ));
 
-storiesOf('Button', module)
+storiesOf('ButtonExemplo', module)
   .addDecorator(muiTheme())
   .add('Text Buttons', () => <MaterialComponent />)
   .add('Outlined Buttons', () => <MaterialComponent variant="outlined" />)
